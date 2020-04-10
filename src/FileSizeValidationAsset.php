@@ -5,21 +5,21 @@ namespace nms\filepond;
 use yii\web\AssetBundle;
 
 /**
- * Asset for File rename plugin in FilePond.
+ * Asset for File size validation plugin in FilePond.
  * @author Michael Naumov <vommuan@gmail.com>
  */
-class FileRenameAsset extends AssetBundle
+class FileSizeValidationAsset extends AssetBundle
 {
     /**
      * {@inheritdoc}
      */
-    public $sourcePath = '@npm/filepond-plugin-file-rename';
+    public $sourcePath = '@npm/filepond-plugin-file-validate-size';
 
     /**
      * {@inheritdoc}
      */
     public $js = [
-        (YII_ENV_DEV) ? 'dist/filepond-plugin-file-rename.js' : 'dist/filepond-plugin-file-rename.min.js',
+        (YII_ENV_DEV) ? 'dist/filepond-plugin-file-validate-size.js' : 'dist/filepond-plugin-file-validate-size.min.js',
     ];
 
     /**
