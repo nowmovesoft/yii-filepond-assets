@@ -5,28 +5,27 @@ namespace nms\filepond;
 use yii\web\AssetBundle;
 
 /**
- * Asset for using jQuery with FilePond.
+ * Asset for File Encode plugin in FilePond.
  * @author Michael Naumov <vommuan@gmail.com>
  */
-class JqueryAsset extends AssetBundle
+class FileEncodeAsset extends AssetBundle
 {
     /**
      * {@inheritdoc}
      */
-    public $sourcePath = '@npm/jquery-filepond';
+    public $sourcePath = '@npm/filepond-plugin-file-encode';
 
     /**
      * {@inheritdoc}
      */
     public $js = [
-        'filepond.jquery.js',
+        (YII_ENV_DEV) ? 'dist/filepond-plugin-file-encode.js' : 'dist/filepond-plugin-file-encode.min.js',
     ];
 
     /**
      * {@inheritdoc}
      */
     public $depends = [
-        'yii\web\JqueryAsset',
         'nms\filepond\FilePondAsset',
     ];
 }
