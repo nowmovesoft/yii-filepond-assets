@@ -39,7 +39,7 @@ Basic namespace is `nms\filepond`. If you want to connect wrapper or plugin, you
 | [File metadata plugin](https://pqina.nl/filepond/docs/patterns/plugins/file-metadata/) | FileMetadataAsset |
 | [File poster plugin](https://pqina.nl/filepond/docs/patterns/plugins/file-poster/) | FilePosterAsset |
 | [File rename plugin](https://pqina.nl/filepond/docs/patterns/plugins/file-rename/) | FileRenameAsset |
-| [File size validation plugin](https://pqina.nl/filepond/docs/patterns/plugins/file-validate-size/) | FileSizeValidationAsset.php |
+| [File size validation plugin](https://pqina.nl/filepond/docs/patterns/plugins/file-validate-size/) | FileSizeValidationAsset |
 | [File type validation plugin](https://pqina.nl/filepond/docs/patterns/plugins/file-validate-type/) | FileTypeValidationAsset |
 | [Image EXIF orientation plugin](https://pqina.nl/filepond/docs/patterns/plugins/image-exif-orientation/) | ImageExifOrientationAsset |
 | [Image crop plugin](https://pqina.nl/filepond/docs/patterns/plugins/image-crop/) | ImageCropAsset |
