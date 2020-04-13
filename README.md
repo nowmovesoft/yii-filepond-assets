@@ -1,6 +1,6 @@
 # Yii2 FilePond Assets
 
-Yii2 assets bundles for [FilePond](https://pqina.nl/filepond/).
+Yii2 assets bundles collection for [FilePond](https://pqina.nl/filepond/).
 
 ## Installation
 
@@ -12,3 +12,17 @@ Then you can install this library using the following command:
 ~~~
 composer require nowmovesoft/yii-filepond-assets
 ~~~
+
+## Usage
+
+### Example
+
+This code will add FilePond scripts to your view:
+
+```php
+<?php
+// In Yii2 view file
+use nms\filepond\FilePondAsset;
+
+FilePondAsset::register($this);
+```
