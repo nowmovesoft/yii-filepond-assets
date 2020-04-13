@@ -44,11 +44,6 @@
         "npm-asset/filepond-plugin-image-validate-size": "^1.2.3",
         "npm-asset/filepond-plugin-image-filter": "^1.0.0"
     },
-    "require-dev": {
-        "codeception/base": "^3.0",
-        "codeception/verify": "^1.0",
-        "codeception/specify": "^1.0"
-    },
     "autoload":{
         "psr-4":{
             "nms\\filepond\\": "src/"

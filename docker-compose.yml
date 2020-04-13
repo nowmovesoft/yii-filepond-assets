@@ -1,0 +1,15 @@
+version: '3.7'
+services:
+  codecept:
+    image: codeception/codeception
+    depends_on:
+      - chrome
+      - web
+    volumes:
+      - .:/project
+  web:
+    image: php:7.4-fpm-alpine
+    volumes:
+      - .:/app
+  chrome:
+    image: selenium/standalone-chrome
