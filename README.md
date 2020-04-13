@@ -29,7 +29,7 @@ FilePondAsset::register($this);
 
 ### Assets conformity
 
-Basic namespace is `nms\filepond`. If you want to connect wrapper or plugin, you don't need not connect FilePond itself directly. It will connect automatically.
+Basic namespace is `nms\filepond`. If you want to connect wrapper or plugin, you don't need to connect FilePond itself directly. It will connect automatically.
 
 | FilePond Script | Yii Asset |
 |-----------------|-----------|
