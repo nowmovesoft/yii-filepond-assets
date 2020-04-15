@@ -49,3 +49,14 @@ Basic namespace is `nms\filepond`. If you want to connect wrapper or plugin, you
 | [Image resize plugin](https://pqina.nl/filepond/docs/patterns/plugins/image-resize/) | ImageResizeAsset |
 | [Image size validation plugin](https://pqina.nl/filepond/docs/patterns/plugins/image-validate-size/) | ImageSizeValidationAsset |
 | [Image transform plugin](https://pqina.nl/filepond/docs/patterns/plugins/image-transform/) | ImageTransformAsset |
+
+## Tests
+
+To run tests you should install [Docker](https://docs.docker.com/get-docker/) and [Docker Compose](https://docs.docker.com/compose/install/) first.
+
+After that, go to `bin` directory and run the following commands:
+
+```bash
+./composer.sh install
+./codecept.sh run
+```
