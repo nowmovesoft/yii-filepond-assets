@@ -1,6 +1,6 @@
 <?php
 
-namespace nms\filepond;
+namespace nms\filepond\npm;
 
 use yii\web\AssetBundle;
 
@@ -13,19 +13,19 @@ class FileEncodeAsset extends AssetBundle
     /**
      * {@inheritdoc}
      */
-    public $sourcePath = __dir__ . '/js/file-encode';
+    public $sourcePath = '@npm/filepond-plugin-file-encode';
 
     /**
      * {@inheritdoc}
      */
     public $js = [
-        'file-encode.js',
+        (YII_ENV_DEV) ? 'dist/filepond-plugin-file-encode.js' : 'dist/filepond-plugin-file-encode.min.js',
     ];
 
     /**
      * {@inheritdoc}
      */
     public $depends = [
-        'nms\filepond\npm\FileEncodeAsset',
+        'nms\filepond\FilePondAsset',
     ];
 }

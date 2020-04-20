@@ -13,26 +13,19 @@ class FilePosterAsset extends AssetBundle
     /**
      * {@inheritdoc}
      */
-    public $sourcePath = '@npm/filepond-plugin-file-poster';
-
-    /**
-     * {@inheritdoc}
-     */
-    public $css = [
-        (YII_ENV_DEV) ? 'dist/filepond-plugin-file-poster.css' : 'dist/filepond-plugin-file-poster.min.css',
-    ];
+    public $sourcePath = __dir__ . '/js/file-poster';
 
     /**
      * {@inheritdoc}
      */
     public $js = [
-        (YII_ENV_DEV) ? 'dist/filepond-plugin-file-poster.js' : 'dist/filepond-plugin-file-poster.min.js',
+        'file-poster.js',
     ];
 
     /**
      * {@inheritdoc}
      */
     public $depends = [
-        'nms\filepond\FilePondAsset',
+        'nms\filepond\npm\FilePosterAsset',
     ];
 }

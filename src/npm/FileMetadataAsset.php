@@ -1,6 +1,6 @@
 <?php
 
-namespace nms\filepond;
+namespace nms\filepond\npm;
 
 use yii\web\AssetBundle;
 
@@ -13,19 +13,19 @@ class FileMetadataAsset extends AssetBundle
     /**
      * {@inheritdoc}
      */
-    public $sourcePath = __dir__ . '/js/file-metadata';
+    public $sourcePath = '@npm/filepond-plugin-file-metadata';
 
     /**
      * {@inheritdoc}
      */
     public $js = [
-        'file-metadata.js',
+        (YII_ENV_DEV) ? 'dist/filepond-plugin-file-metadata.js' : 'dist/filepond-plugin-file-metadata.min.js',
     ];
 
     /**
      * {@inheritdoc}
      */
     public $depends = [
-        'nms\filepond\npm\FileMetadataAsset',
+        'nms\filepond\FilePondAsset',
     ];
 }

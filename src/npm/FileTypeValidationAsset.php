@@ -1,6 +1,6 @@
 <?php
 
-namespace nms\filepond;
+namespace nms\filepond\npm;
 
 use yii\web\AssetBundle;
 
@@ -13,19 +13,19 @@ class FileTypeValidationAsset extends AssetBundle
     /**
      * {@inheritdoc}
      */
-    public $sourcePath = __dir__ . '/js/file-validate-type';
+    public $sourcePath = '@npm/filepond-plugin-file-validate-type';
 
     /**
      * {@inheritdoc}
      */
     public $js = [
-        'file-validate-type.js',
+        (YII_ENV_DEV) ? 'dist/filepond-plugin-file-validate-type.js' : 'dist/filepond-plugin-file-validate-type.min.js',
     ];
 
     /**
      * {@inheritdoc}
      */
     public $depends = [
-        'nms\filepond\npm\FileTypeValidationAsset',
+        'nms\filepond\FilePondAsset',
     ];
 }

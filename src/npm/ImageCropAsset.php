@@ -1,6 +1,6 @@
 <?php
 
-namespace nms\filepond;
+namespace nms\filepond\npm;
 
 use yii\web\AssetBundle;
 
@@ -13,19 +13,19 @@ class ImageCropAsset extends AssetBundle
     /**
      * {@inheritdoc}
      */
-    public $sourcePath = __dir__ . '/js/image-crop';
+    public $sourcePath = '@npm/filepond-plugin-image-crop';
 
     /**
      * {@inheritdoc}
      */
     public $js = [
-        'image-crop.js',
+        (YII_ENV_DEV) ? 'dist/filepond-plugin-image-crop.js' : 'dist/filepond-plugin-image-crop.min.js',
     ];
 
     /**
      * {@inheritdoc}
      */
     public $depends = [
-        'nms\filepond\npm\ImageCropAsset',
+        'nms\filepond\FilePondAsset',
     ];
 }

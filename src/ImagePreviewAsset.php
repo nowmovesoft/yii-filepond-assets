@@ -13,26 +13,19 @@ class ImagePreviewAsset extends AssetBundle
     /**
      * {@inheritdoc}
      */
-    public $sourcePath = '@npm/filepond-plugin-image-preview';
-
-    /**
-     * {@inheritdoc}
-     */
-    public $css = [
-        (YII_ENV_DEV) ? 'dist/filepond-plugin-image-preview.css' : 'dist/filepond-plugin-image-preview.min.css',
-    ];
+    public $sourcePath = __dir__ . '/js/image-preview';
 
     /**
      * {@inheritdoc}
      */
     public $js = [
-        (YII_ENV_DEV) ? 'dist/filepond-plugin-image-preview.js' : 'dist/filepond-plugin-image-preview.min.js',
+        'image-preview.js',
     ];
 
     /**
      * {@inheritdoc}
      */
     public $depends = [
-        'nms\filepond\FilePondAsset',
+        'nms\filepond\npm\ImagePreviewAsset',
     ];
 }

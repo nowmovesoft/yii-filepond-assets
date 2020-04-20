@@ -34,6 +34,7 @@ class AssetCest
         $I->seeInSource('filepond.min.css');
         $I->seeInSource('filepond.min.js');
         $I->seeInSource('filepond-plugin-file-encode.min.js');
+        $I->seeInSource('file-encode.js');
     }
 
     /**
@@ -45,6 +46,7 @@ class AssetCest
         $I->seeInSource('filepond.min.css');
         $I->seeInSource('filepond.min.js');
         $I->seeInSource('filepond-plugin-file-metadata.min.js');
+        $I->seeInSource('file-metadata.js');
     }
 
     /**
@@ -57,6 +59,7 @@ class AssetCest
         $I->seeInSource('filepond.min.js');
         $I->seeInSource('filepond-plugin-file-poster.min.css');
         $I->seeInSource('filepond-plugin-file-poster.min.js');
+        $I->seeInSource('file-poster.js');
     }
 
     /**
@@ -68,6 +71,7 @@ class AssetCest
         $I->seeInSource('filepond.min.css');
         $I->seeInSource('filepond.min.js');
         $I->seeInSource('filepond-plugin-file-rename.min.js');
+        $I->seeInSource('file-rename.js');
     }
 
     /**
@@ -79,6 +83,7 @@ class AssetCest
         $I->seeInSource('filepond.min.css');
         $I->seeInSource('filepond.min.js');
         $I->seeInSource('filepond-plugin-file-validate-size.min.js');
+        $I->seeInSource('file-validate-size.js');
     }
 
     /**
@@ -90,6 +95,7 @@ class AssetCest
         $I->seeInSource('filepond.min.css');
         $I->seeInSource('filepond.min.js');
         $I->seeInSource('filepond-plugin-file-validate-type.min.js');
+        $I->seeInSource('file-validate-type.js');
     }
 
     /**
@@ -101,6 +107,7 @@ class AssetCest
         $I->seeInSource('filepond.min.css');
         $I->seeInSource('filepond.min.js');
         $I->seeInSource('filepond-plugin-image-crop.min.js');
+        $I->seeInSource('image-crop.js');
     }
 
     /**
@@ -113,6 +120,7 @@ class AssetCest
         $I->seeInSource('filepond.min.js');
         $I->seeInSource('filepond-plugin-image-edit.min.css');
         $I->seeInSource('filepond-plugin-image-edit.min.js');
+        $I->seeInSource('image-edit.js');
     }
 
     /**
@@ -124,6 +132,7 @@ class AssetCest
         $I->seeInSource('filepond.min.css');
         $I->seeInSource('filepond.min.js');
         $I->seeInSource('filepond-plugin-image-exif-orientation.min.js');
+        $I->seeInSource('image-exif-orientation.js');
     }
 
     /**
@@ -135,6 +144,7 @@ class AssetCest
         $I->seeInSource('filepond.min.css');
         $I->seeInSource('filepond.min.js');
         $I->seeInSource('filepond-plugin-image-filter.min.js');
+        $I->seeInSource('image-filter.js');
     }
 
     /**
@@ -147,6 +157,7 @@ class AssetCest
         $I->seeInSource('filepond.min.js');
         $I->seeInSource('filepond-plugin-image-preview.min.css');
         $I->seeInSource('filepond-plugin-image-preview.min.js');
+        $I->seeInSource('image-preview.js');
     }
 
     /**
@@ -158,6 +169,7 @@ class AssetCest
         $I->seeInSource('filepond.min.css');
         $I->seeInSource('filepond.min.js');
         $I->seeInSource('filepond-plugin-image-resize.min.js');
+        $I->seeInSource('image-resize.js');
     }
 
     /**
@@ -169,6 +181,7 @@ class AssetCest
         $I->seeInSource('filepond.min.css');
         $I->seeInSource('filepond.min.js');
         $I->seeInSource('filepond-plugin-image-validate-size.min.js');
+        $I->seeInSource('image-validate-size.js');
     }
 
     /**
@@ -180,5 +193,6 @@ class AssetCest
         $I->seeInSource('filepond.min.css');
         $I->seeInSource('filepond.min.js');
         $I->seeInSource('filepond-plugin-image-transform.min.js');
+        $I->seeInSource('image-transform.js');
     }
 }
