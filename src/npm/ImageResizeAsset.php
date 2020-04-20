@@ -1,6 +1,6 @@
 <?php
 
-namespace nms\filepond;
+namespace nms\filepond\npm;
 
 use yii\web\AssetBundle;
 
@@ -13,19 +13,19 @@ class ImageResizeAsset extends AssetBundle
     /**
      * {@inheritdoc}
      */
-    public $sourcePath = __dir__ . '/js/image-resize';
+    public $sourcePath = '@npm/filepond-plugin-image-resize';
 
     /**
      * {@inheritdoc}
      */
     public $js = [
-        'image-resize.js',
+        (YII_ENV_DEV) ? 'dist/filepond-plugin-image-resize.js' : 'dist/filepond-plugin-image-resize.min.js',
     ];
 
     /**
      * {@inheritdoc}
      */
     public $depends = [
-        'nms\filepond\npm\ImageResizeAsset',
+        'nms\filepond\FilePondAsset',
     ];
 }

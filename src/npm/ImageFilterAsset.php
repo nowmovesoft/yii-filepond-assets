@@ -1,6 +1,6 @@
 <?php
 
-namespace nms\filepond;
+namespace nms\filepond\npm;
 
 use yii\web\AssetBundle;
 
@@ -13,19 +13,19 @@ class ImageFilterAsset extends AssetBundle
     /**
      * {@inheritdoc}
      */
-    public $sourcePath = __dir__ . '/js/image-filter';
+    public $sourcePath = '@npm/filepond-plugin-image-filter';
 
     /**
      * {@inheritdoc}
      */
     public $js = [
-        'image-filter.js',
+        (YII_ENV_DEV) ? 'dist/filepond-plugin-image-filter.js' : 'dist/filepond-plugin-image-filter.min.js',
     ];
 
     /**
      * {@inheritdoc}
      */
     public $depends = [
-        'nms\filepond\npm\ImageFilterAsset',
+        'nms\filepond\FilePondAsset',
     ];
 }

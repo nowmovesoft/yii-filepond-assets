@@ -1,6 +1,6 @@
 <?php
 
-namespace nms\filepond;
+namespace nms\filepond\npm;
 
 use yii\web\AssetBundle;
 
@@ -13,19 +13,19 @@ class ImageSizeValidationAsset extends AssetBundle
     /**
      * {@inheritdoc}
      */
-    public $sourcePath = __dir__ . '/js/image-validate-size';
+    public $sourcePath = '@npm/filepond-plugin-image-validate-size';
 
     /**
      * {@inheritdoc}
      */
     public $js = [
-        'image-validate-size.js',
+        (YII_ENV_DEV) ? 'dist/filepond-plugin-image-validate-size.js' : 'dist/filepond-plugin-image-validate-size.min.js',
     ];
 
     /**
      * {@inheritdoc}
      */
     public $depends = [
-        'nms\filepond\npm\ImageSizeValidationAsset',
+        'nms\filepond\FilePondAsset',
     ];
 }

@@ -1,6 +1,6 @@
 <?php
 
-namespace nms\filepond;
+namespace nms\filepond\npm;
 
 use yii\web\AssetBundle;
 
@@ -13,19 +13,19 @@ class ImageExifOrientationAsset extends AssetBundle
     /**
      * {@inheritdoc}
      */
-    public $sourcePath = __dir__ . '/js/image-exif-orientation';
+    public $sourcePath = '@npm/filepond-plugin-image-exif-orientation';
 
     /**
      * {@inheritdoc}
      */
     public $js = [
-        'image-exif-orientation.js',
+        (YII_ENV_DEV) ? 'dist/filepond-plugin-image-exif-orientation.js' : 'dist/filepond-plugin-image-exif-orientation.min.js',
     ];
 
     /**
      * {@inheritdoc}
      */
     public $depends = [
-        'nms\filepond\npm\ImageExifOrientationAsset',
+        'nms\filepond\FilePondAsset',
     ];
 }

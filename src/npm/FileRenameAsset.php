@@ -1,6 +1,6 @@
 <?php
 
-namespace nms\filepond;
+namespace nms\filepond\npm;
 
 use yii\web\AssetBundle;
 
@@ -13,19 +13,19 @@ class FileRenameAsset extends AssetBundle
     /**
      * {@inheritdoc}
      */
-    public $sourcePath = __dir__ . '/js/file-rename';
+    public $sourcePath = '@npm/filepond-plugin-file-rename';
 
     /**
      * {@inheritdoc}
      */
     public $js = [
-        'file-rename.js',
+        (YII_ENV_DEV) ? 'dist/filepond-plugin-file-rename.js' : 'dist/filepond-plugin-file-rename.min.js',
     ];
 
     /**
      * {@inheritdoc}
      */
     public $depends = [
-        'nms\filepond\npm\FileRenameAsset',
+        'nms\filepond\FilePondAsset',
     ];
 }

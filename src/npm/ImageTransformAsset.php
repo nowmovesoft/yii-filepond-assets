@@ -1,6 +1,6 @@
 <?php
 
-namespace nms\filepond;
+namespace nms\filepond\npm;
 
 use yii\web\AssetBundle;
 
@@ -13,19 +13,19 @@ class ImageTransformAsset extends AssetBundle
     /**
      * {@inheritdoc}
      */
-    public $sourcePath = __dir__ . '/js/image-transform';
+    public $sourcePath = '@npm/filepond-plugin-image-transform';
 
     /**
      * {@inheritdoc}
      */
     public $js = [
-        'image-transform.js',
+        (YII_ENV_DEV) ? 'dist/filepond-plugin-image-transform.js' : 'dist/filepond-plugin-image-transform.min.js',
     ];
 
     /**
      * {@inheritdoc}
      */
     public $depends = [
-        'nms\filepond\npm\ImageTransformAsset',
+        'nms\filepond\FilePondAsset',
     ];
 }
