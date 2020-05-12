@@ -4,8 +4,8 @@ Yii2 assets bundles collection for [FilePond](https://pqina.nl/filepond/).
 
 ## Installation
 
-If you don't have [Composer](http://getcomposer.org/), you may install it by following instructions
-at [getcomposer.org](http://getcomposer.org/doc/00-intro.md#installation-nix).
+If you don't have [Composer](https://getcomposer.org/), you may install it by following instructions
+at [getcomposer.org](https://getcomposer.org/doc/00-intro.md).
 
 Then you can install this library using the following command:
 
